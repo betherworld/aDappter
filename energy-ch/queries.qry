@@ -1,0 +1,14 @@
+query Q1 {
+    description: "Select all tokens related to a consumer"
+    statement:
+        SELECT org.energy.network.Token
+            WHERE (_$ownerToken == owner)
+}
+
+query Q2 {
+    description: "Select all tokens related to a consumer limited"
+    statement:
+        SELECT org.energy.network.Token
+            WHERE (_$ownerToken == owner)
+              LIMIT _$limitParam
+}

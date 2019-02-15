@@ -1,0 +1,74 @@
+/**
+ * My commodity trading network
+ */
+namespace org.energy.network
+
+//concept of msg to return after transactions
+concept Msg{
+  o String msg
+}
+
+//Consumers are the flat/houses
+participant Consumer identified by consumerID {
+  o String consumerID
+  o String zipCode
+  o Double flatArea
+  o Integer balance
+  o Integer assignedTokens
+}
+
+//Owner of a project 
+participant ProjectOwner identified by ownerID {
+  o String ownerID
+  o String Name
+}
+
+//Created once per month, Emission asset to carry all the data of emission
+asset Emission identified by emissionID{
+  o String emissionID
+  o Double litersOil
+  o Double delta
+  o Double savedAmount optional
+  o DateTime timeStamp
+  o Double baseLine optional
+  --> Consumer owner
+}
+
+//project asset so consumers can donate token to them
+asset Project identified by projectID {
+  o String projectID
+  o String projectTitle
+  o String projectDescription
+  o Integer projectBalance default = 0 //Number of tokens
+  o Integer tokensGoal default = 0 //set goal for the project
+  o String status default = "Open"
+  --> ProjectOwner owner
+}
+
+//tokens generated if consumer decreases his consumption of co2, and can be donated to projects
+asset Token identified by tokenID {
+  o String tokenID
+  --> Consumer owner
+  --> Project assignedProject optional 
+}
+
+//transaction to donate tokens to projects
+@returns(Msg)
+transaction assignToken {
+  o Integer amountTokens
+  --> Consumer owner
+  --> Project assignedProject
+}
+
+//transaction to create emission asset
+transaction CreateEmission {
+  o Double litersOil
+  --> Consumer owner
+}
+
+
+//transaction to get all tokens of a specific consumer
+@returns(Token[])
+transaction getTokens {
+  --> Consumer owner
+}
