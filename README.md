@@ -7,6 +7,9 @@ How could Blockchain technology benefit the climate twice with a solution that d
 2) The reinvestment of saved costs in (local) sustainable projects with direct payments from the
 consumer who saved energy to sustainable projects without costly/untrustworthy middlemen.
 
+## Solution
+
+Please have a look at our (adappter_presentation.pdf)[5-slide presentation], the README files or watch our (demonstration video)[https://youtu.be/CYOyI98yENc].
 
 ## Components
 This project consists of three main components:
