@@ -1,0 +1,67 @@
+<div class="headerDiv">
+  <h1>{{ project.projectTitle }}</h1>
+</div>
+<div>
+  <div class="descDiv">
+    <p width="100%" height="100%">
+      {{ project.long }}
+    </p>
+    <p width="100%" height="100%">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+  </div>
+
+  <div class="contentDiv">
+    <div
+      class="picDiv"
+      [style.background-image]="'url(' + project.src + ')'"
+    ></div>
+    <div class="lineDiv" style="margin-top:10px; margin-bottom:0px">
+      <h5 style="color: gray;">500 Tokens Raised!</h5>
+    </div>
+    <div class="lineDiv" style="margin-top:0px; margin-bottom:15px">
+      <nz-progress [nzPercent]="50" nzStatus="active"> </nz-progress>
+    </div>
+    <div
+      class="donateDiv"
+      style="display:flex; margin-top:30px;margin-bottom:30px"
+    >
+      <input nz-input placeholder="Tokens" [(ngModel)]="value" />
+      <button nz-button nzType="primary" style=" float:right">Donate</button>
+    </div>
+
+    <div class="timelineDiv">
+      <nz-timeline>
+        <nz-timeline-item>Create a services site</nz-timeline-item>
+        <nz-timeline-item>Solve initial network problems</nz-timeline-item>
+        <nz-timeline-item>Technical testing</nz-timeline-item>
+        <nz-timeline-item>Network problems being solved</nz-timeline-item>
+        <nz-timeline-item>Technical testing</nz-timeline-item>
+      </nz-timeline>
+    </div>
+  </div>
+</div>

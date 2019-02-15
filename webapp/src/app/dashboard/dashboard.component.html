@@ -1,0 +1,61 @@
+<div class="container">
+  <div nz-row class="stats" nzGutter="8">
+    <div nz-col [nzSpan]="6">
+      <nz-card nzTitle="Token overview" class="tokens">
+        <span class="balance">Available tokens</span>
+        <h1><i nz-icon type="pay-circle" theme="outline"></i> 12.23</h1>
+        <nz-divider></nz-divider>
+
+        <p class="secondary">
+          So far you have donated<br />
+          <span><i nz-icon type="pay-circle" theme="outline"></i> 2.4</span>
+        </p>
+        <p class="secondary">
+          National donations amount to<br />
+          <span><i nz-icon type="pay-circle" theme="outline"></i> 123424</span>
+        </p>
+      </nz-card>
+    </div>
+    <div nz-col [nzSpan]="18">
+      <nz-card class="graph" nzTitle="Oil consumption stats">
+        <canvas
+          baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          [colors]="barChartColors"
+        ></canvas>
+      </nz-card>
+    </div>
+  </div>
+  <div nz-row class="row" nzGutter="6">
+    <nz-card class="projects" nzTitle="Projects you funded">
+      <div
+        nz-col
+        nzSpan="5"
+        *ngFor="let item of projects"
+        class="project-entry"
+      >
+        <nz-card
+          class="nz-card"
+          [nzCover]="coverTemplate"
+          [nzActions]="[actionEllipsis]"
+        >
+          <nz-card-meta
+            nzTitle="{{ item.projectTitle }}"
+            nzDescription="{{ item.status }}% funded"
+            [nzAvatar]="avatarTemplate"
+          ></nz-card-meta>
+        </nz-card>
+        <ng-template #coverTemplate>
+          <img alt="example" src="{{ item.src }}" />
+        </ng-template>
+        <ng-template #actionEllipsis>
+          <a routerLink="/projects/{{ item.projectID }}">See updates</a>
+        </ng-template>
+      </div>
+    </nz-card>
+  </div>
+</div>

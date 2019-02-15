@@ -1,0 +1,49 @@
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.headerDiv {
+  width: 100%;
+  height: 10%;
+  min-width: 30px;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+.timelineDiv {
+  height: 50%;
+  width: 100%;
+  padding: 5%;
+  float: left;
+}
+.contentDiv {
+  height: 100%;
+  align-content: center;
+  float: left;
+  width: 33.33%;
+  padding: 0 5%;
+}
+.descDiv {
+  float: left;
+  padding: 20px 50px;
+  align-content: center;
+  width: 66.66%;
+  height: 100%;
+  border-right: 0.5px solid #1e7f46;
+}
+.picDiv {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lineDiv {
+  height: 10px;
+  padding-left: 5%;
+}
+.donateDiv {
+  padding-left: 5%;
+}
+p {
+  font-size: 1.25em;
+  text-align: justify;
+}

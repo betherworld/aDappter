@@ -1,0 +1,39 @@
+<nz-layout class="layout">
+  <nz-header class="topbar">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="../../assets/logo.png" />
+      </a>
+    </div>
+    <ul
+      nz-menu
+      class="menu"
+      [nzTheme]="'dark'"
+      [nzMode]="'horizontal'"
+      style="line-height: 64px;"
+    >
+      <li
+        *ngFor="let child of menu"
+        nz-menu-item
+        [routerLink]="child.link"
+        [nzSelected]="child.selected"
+      >
+        <span class="nav-text">{{ child.text }}</span>
+      </li>
+    </ul>
+    <div class="user">
+      <nz-dropdown [nzTrigger]="'click'" [nzPlacement]="'bottomRight'">
+        <a nz-dropdown> Human Being <i nz-icon type="down"></i> </a>
+        <ul nz-menu>
+          <li nz-menu-item>Settings</li>
+          <li nz-menu-divider></li>
+          <li nz-menu-item><i nz-icon type="poweroff"></i>Logout</li>
+        </ul>
+      </nz-dropdown>
+    </div>
+  </nz-header>
+  <nz-content class="content">
+    <router-outlet></router-outlet>
+  </nz-content>
+  <nz-footer style="text-align: center;">aDappter @ ETHZ ©2019</nz-footer>
+</nz-layout>

@@ -1,0 +1,21 @@
+<div nz-col nzSpan="5" *ngFor="let item of projects" class="project-entry">
+  <nz-card
+    class="nz-card"
+    [nzCover]="coverTemplate"
+    [nzActions]="[actionEllipsis]"
+  >
+    <nz-card-meta
+      nzTitle="{{ item.projectTitle }}"
+      nzDescription="{{ item.projectDescription }}"
+      [nzAvatar]="avatarTemplate"
+    ></nz-card-meta>
+  </nz-card>
+  <ng-template #coverTemplate>
+    <img alt="example" src="{{ item.src }}" />
+  </ng-template>
+  <ng-template #actionEllipsis>
+    <a routerLink="/projects/{{ item.projectID }}">Find out more</a>
+  </ng-template>
+</div>
+
+{{ result | json }}

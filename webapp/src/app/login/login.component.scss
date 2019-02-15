@@ -1,0 +1,38 @@
+.login-form {
+  max-width: 300px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.mainDiv {
+  align-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+  background-image: url("../../assets/loginBackground.jpeg");
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  opacity: 1;
+}
+.loginDivStyle {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  align-items: center;
+  height: 80%;
+  width: 33.33%;
+  min-width: 300px;
+  margin: auto;
+  padding: 5%;
+}

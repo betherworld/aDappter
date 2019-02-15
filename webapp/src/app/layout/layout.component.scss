@@ -1,0 +1,18 @@
+.logo {
+  width: 100px;
+
+  img {
+    margin-right: 1em;
+    height: 40px;
+  }
+}
+.topbar {
+  display: flex;
+  .menu {
+    flex-grow: 2;
+  }
+}
+
+.content {
+  background: #fff;
+}
