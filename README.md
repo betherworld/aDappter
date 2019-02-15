@@ -9,7 +9,7 @@ consumer who saved energy to sustainable projects without costly/untrustworthy m
 
 ## Solution
 
-Please have a look at our (adappter_presentation.pdf)[5-slide presentation], the README files or watch our (demonstration video)[https://youtu.be/CYOyI98yENc].
+Please have a look at our [5-slide presentation](adappter_presentation.pdf), the README files or watch our [demonstration video](https://youtu.be/CYOyI98yENc).
 
 ## Components
 This project consists of three main components:
