@@ -1,6 +1,6 @@
 # aDappter
 
-BETH Hackathon energy suisse challenge
+BETH Hackathon energy suisse challenge.
 
 How could Blockchain technology benefit the climate twice with a solution that documents in a ledger:
 1) CO 2 emission reduction by households (e.g. in the fields of electricity, heat and mobility)
@@ -9,7 +9,7 @@ consumer who saved energy to sustainable projects without costly/untrustworthy m
 
 ## Solution
 
-Please have a look at our [5-slide presentation](adappter_presentation.pdf), the README files or watch our [demonstration video](https://youtu.be/CYOyI98yENc).
+Please have a look at our [report](BETH19-report-EnergyCH-aDappter.pdf),  [5-slide presentation](adappter_presentation.pdf), the README files or watch our [demonstration video](https://youtu.be/CYOyI98yENc).
 
 ## Components
 This project consists of three main components:

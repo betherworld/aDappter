@@ -149,4 +149,6 @@ The consumer was updated also:
 }
 ```
 ​
+
 The transactions `getToken` queries all tokens and returns tokens owned by a specific `Consumer`. The transaction `getAreaEmissions` returns all emissions.
+
